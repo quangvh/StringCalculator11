@@ -45,5 +45,9 @@ public class CalculatorTest {
     public void testIgnoreMoreThanOneThousand() throws Exception {
         assertEquals(Calculator.add("1,1002,3"), 4);
     }
+    @Test
+    public void testCustomDelimiter() throws Exception {
+        assertEquals(Calculator.add("//[***]\n1***2***3"), 6);
+    }
 
 }
