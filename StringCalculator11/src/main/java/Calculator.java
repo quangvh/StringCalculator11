@@ -14,9 +14,13 @@ public class Calculator {
             return 0;
         } else {
             if (text.startsWith("//[")) {
-                String firstDelimiter = text.split("\\[")[1];
-                String secondDelimiter = Pattern.quote(firstDelimiter.split("]")[0]);
-                strDelimiter = "\n|" + secondDelimiter;
+                strDelimiter = "\n";
+                String[] listDelimiter = text.split("\\[");
+                for (int i=0; i < listDelimiter.length; i++) {
+                   if (i >= 1) {
+                       strDelimiter += "|" + Pattern.quote(listDelimiter[i].split("]")[0]);
+                   }
+                }
                 strNumber = text.split("\n")[1];
             } else if (text.startsWith("//")) {
                 strDelimiter = text.substring(2, 3) + "|\n";
