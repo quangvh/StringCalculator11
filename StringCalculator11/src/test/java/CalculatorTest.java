@@ -32,5 +32,14 @@ public class CalculatorTest {
     public void testDifferentDelimiter() throws Exception {
         assertEquals(Calculator.add("//;\n1;2"), 3);
     }
+    @Test
+    public void testNegativeNumber() {
+        try {
+            Calculator.add("-1,-2");
+            fail("Exception");
+        } catch (Exception e) {
+            assertEquals(e.getMessage(), "negatives not allowed -1 -2");
+        }
+    }
 
 }
