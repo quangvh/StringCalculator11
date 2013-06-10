@@ -6,10 +6,9 @@ import java.util.regex.Pattern;
  */
 public class Calculator {
     public static int add(String text) throws Exception {
-        int sum = 0;
         String strDelimiter = "";
         String strNumber = "";
-        String strNegative = "";
+        String[] listNumber = null;
         if (text.isEmpty()) {
             return 0;
         } else {
@@ -31,17 +30,25 @@ public class Calculator {
             } else {
                 return Integer.parseInt(text);
             }
-            String[] listNumber = strNumber.split(strDelimiter);
-            for (String number : listNumber) {
-                if (!number.equals("") && Integer.parseInt(number) <= 1000){
-                    if (Integer.parseInt(number) < 0)
-                        strNegative += " " + number;
-                    sum += Integer.parseInt(number);
-                }
+            listNumber = strNumber.split(strDelimiter);
+        }
+
+        return getSumOfListNumber(listNumber);
+    }
+
+    public static int getSumOfListNumber(String[] listNumber) throws Exception {
+        int sum = 0;
+        String strNegative = "";
+        for (String number : listNumber) {
+            if (!number.equals("") && Integer.parseInt(number) <= 1000){
+                if (Integer.parseInt(number) < 0)
+                    strNegative += " " + number;
+                sum += Integer.parseInt(number);
             }
         }
         if (!strNegative.equals(""))
             throw new Exception("negatives not allowed" + strNegative);
         return sum;
     }
+
 }
