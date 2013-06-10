@@ -22,10 +22,11 @@ public class Calculator {
             }
             String[] listNumber = strNumber.split(strDelimiter);
             for (String number : listNumber) {
-                if (!number.equals(""))
+                if (!number.equals("") && Integer.parseInt(number) <= 1000){
+                    if (Integer.parseInt(number) < 0)
+                        strNegative += " " + number;
                     sum += Integer.parseInt(number);
-                if (Integer.parseInt(number) < 0)
-                    strNegative += " " + number;
+                }
             }
         }
         if (!strNegative.equals(""))
