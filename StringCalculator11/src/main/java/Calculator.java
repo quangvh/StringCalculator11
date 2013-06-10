@@ -6,29 +6,27 @@ import java.util.regex.Pattern;
  */
 public class Calculator {
     public static int add(String text) throws Exception {
-        String strDelimiter = "";
-        String[] listNumber = null;
-        if (text.isEmpty()) {
+        if (text.isEmpty())
             return 0;
-        } else {
-            if (text.startsWith("//[")) {
-                strDelimiter = "\n";
-                String[] listDelimiter = text.split("\\[");
-                for (int i=0; i < listDelimiter.length; i++) {
-                   if (i >= 1) {
-                       strDelimiter += "|" + Pattern.quote(listDelimiter[i].split("]")[0]);
-                   }
-                }
-            } else if (text.startsWith("//")) {
-                strDelimiter = text.substring(2, 3) + "|\n";
-            } else if (text.contains(",")){
-                strDelimiter = ",|\n";
-            } else {
-                return Integer.parseInt(text);
-            }
-            listNumber = getStrNumber(text).split(strDelimiter);
-        }
+        String strDelimiter = getStrDelimiter(text);
+        String[] listNumber = getStrNumber(text).split(strDelimiter);
         return getSumOfListNumber(listNumber);
+    }
+
+    public static String getStrDelimiter(String text) {
+        String strDelimiter = ",|\n";
+        if (text.startsWith("//[")) {
+            strDelimiter = "\n";
+            String[] listDelimiter = text.split("\\[");
+            for (int i = 0; i < listDelimiter.length; i++) {
+                if (i >= 1) {
+                    strDelimiter += "|" + Pattern.quote(listDelimiter[i].split("]")[0]);
+                }
+            }
+        } else if (text.startsWith("//")) {
+            strDelimiter = text.substring(2, 3) + "|\n";
+        }
+        return strDelimiter;
     }
 
     public static String getStrNumber(String text) {
@@ -43,7 +41,7 @@ public class Calculator {
         int sum = 0;
         String strNegative = "";
         for (String number : listNumber) {
-            if (Integer.parseInt(number) <= 1000){
+            if (Integer.parseInt(number) <= 1000) {
                 if (Integer.parseInt(number) < 0)
                     strNegative += " " + number;
                 sum += Integer.parseInt(number);
