@@ -70,7 +70,7 @@
       <file leaf-file-name="CalculatorTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="33" selection-start="465" selection-end="482" vertical-scroll-proportion="0.0">
+            <state line="22" column="26" selection-start="465" selection-end="482" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,7 +81,7 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="405" selection-end="405" vertical-scroll-proportion="0.6021798">
+            <state line="8" column="16" selection-start="0" selection-end="549" vertical-scroll-proportion="0.3705722">
               <folding />
             </state>
           </provider>
@@ -549,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="33" selection-start="465" selection-end="482" vertical-scroll-proportion="0.0">
+        <state line="22" column="26" selection-start="465" selection-end="482" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -558,7 +558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="405" selection-end="405" vertical-scroll-proportion="0.6021798">
+        <state line="8" column="16" selection-start="0" selection-end="549" vertical-scroll-proportion="0.3705722">
           <folding />
         </state>
       </provider>
