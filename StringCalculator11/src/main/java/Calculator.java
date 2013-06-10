@@ -1,3 +1,5 @@
+import java.util.regex.Pattern;
+
 /**
  * User: quangvh
  * Date: 6/10/13
@@ -11,7 +13,12 @@ public class Calculator {
         if (text.isEmpty()) {
             return 0;
         } else {
-            if (text.startsWith("//")) {
+            if (text.startsWith("//[")) {
+                String firstDelimiter = text.split("\\[")[1];
+                String secondDelimiter = Pattern.quote(firstDelimiter.split("]")[0]);
+                strDelimiter = "\n|" + secondDelimiter;
+                strNumber = text.split("\n")[1];
+            } else if (text.startsWith("//")) {
                 strDelimiter = text.substring(2, 3) + "|\n";
                 strNumber = text.substring(2);
             } else if (text.contains(",")){
