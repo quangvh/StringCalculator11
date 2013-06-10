@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 public class Calculator {
     public static int add(String text) throws Exception {
         String strDelimiter = "";
-        String strNumber = "";
         String[] listNumber = null;
         if (text.isEmpty()) {
             return 0;
@@ -20,27 +19,31 @@ public class Calculator {
                        strDelimiter += "|" + Pattern.quote(listDelimiter[i].split("]")[0]);
                    }
                 }
-                strNumber = text.split("\n")[1];
             } else if (text.startsWith("//")) {
                 strDelimiter = text.substring(2, 3) + "|\n";
-                strNumber = text.substring(2);
             } else if (text.contains(",")){
                 strDelimiter = ",|\n";
-                strNumber = text;
             } else {
                 return Integer.parseInt(text);
             }
-            listNumber = strNumber.split(strDelimiter);
+            listNumber = getStrNumber(text).split(strDelimiter);
         }
-
         return getSumOfListNumber(listNumber);
+    }
+
+    public static String getStrNumber(String text) {
+        String strNumber = text;
+        if (text.startsWith("//")) {
+            strNumber = text.split("\n")[1];
+        }
+        return strNumber;
     }
 
     public static int getSumOfListNumber(String[] listNumber) throws Exception {
         int sum = 0;
         String strNegative = "";
         for (String number : listNumber) {
-            if (!number.equals("") && Integer.parseInt(number) <= 1000){
+            if (Integer.parseInt(number) <= 1000){
                 if (Integer.parseInt(number) < 0)
                     strNegative += " " + number;
                 sum += Integer.parseInt(number);
