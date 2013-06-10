@@ -46,8 +46,12 @@ public class CalculatorTest {
         assertEquals(Calculator.add("1,1002,3"), 4);
     }
     @Test
-    public void testCustomDelimiter() throws Exception {
+    public void testLengthDelimiter() throws Exception {
         assertEquals(Calculator.add("//[***]\n1***2***3"), 6);
+    }
+    @Test
+    public void testCustomListDelimiter() throws Exception {
+        assertEquals(Calculator.add("//[*][$]\n1*2$3"), 6);
     }
 
 }
