@@ -70,7 +70,7 @@
       <file leaf-file-name="CalculatorTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="26" selection-start="465" selection-end="482" vertical-scroll-proportion="0.0">
+            <state line="34" column="4" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,7 +81,7 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="16" selection-start="0" selection-end="549" vertical-scroll-proportion="0.3705722">
+            <state line="16" column="20" selection-start="505" selection-end="505" vertical-scroll-proportion="0.6757493">
               <folding />
             </state>
           </provider>
@@ -98,8 +98,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/CalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CalculatorTest.java" />
       </list>
     </option>
   </component>
@@ -224,15 +224,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest.testUnknownNumber">
-    <configuration default="false" name="CalculatorTest.testStringEmpty" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.CalculatorTest">
+    <configuration default="false" name="CalculatorTest.testHaveNewLine" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="StringCalculator11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="testStringEmpty" />
+      <option name="METHOD_NAME" value="testHaveNewLine" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -248,14 +248,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="CalculatorTest.testOneNumber" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="CalculatorTest.testNegativeNumber" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="StringCalculator11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="testOneNumber" />
+      <option name="METHOD_NAME" value="testNegativeNumber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -271,14 +271,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="CalculatorTest.testTwoNumber" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="CalculatorTest.testIgnoreMoreThanOneThousand" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="StringCalculator11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="testTwoNumber" />
+      <option name="METHOD_NAME" value="testIgnoreMoreThanOneThousand" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -294,15 +294,38 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="CalculatorTest.testUnknownNumber" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="CalculatorTest.testDifferentDelimiter" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="StringCalculator11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="testUnknownNumber" />
+      <option name="METHOD_NAME" value="testDifferentDelimiter" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="StringCalculator11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -437,11 +460,12 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CalculatorTest.testStringEmpty" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CalculatorTest.testOneNumber" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CalculatorTest.testTwoNumber" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CalculatorTest.testUnknownNumber" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CalculatorTest.testHaveNewLine" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CalculatorTest.testNegativeNumber" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CalculatorTest.testIgnoreMoreThanOneThousand" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CalculatorTest.testDifferentDelimiter" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CalculatorTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -549,7 +573,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="465" selection-end="482" vertical-scroll-proportion="0.0">
+        <state line="34" column="4" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -558,7 +582,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="0" selection-end="549" vertical-scroll-proportion="0.3705722">
+        <state line="16" column="20" selection-start="505" selection-end="505" vertical-scroll-proportion="0.6757493">
           <folding />
         </state>
       </provider>

@@ -3,20 +3,21 @@
  * Date: 6/10/13
  */
 public class Calculator {
-    public static int add(String text) {
+    public static int add(String text) throws Exception {
+        int sum = 0;
         if (text.isEmpty()) {
             return 0;
         } else {
             if (text.contains(",")){
-                String[] listNumber = text.split(",");
-                int sum = 0;
+                String strDelimiter = ",|\n";
+                String[] listNumber = text.split(strDelimiter);
                 for (String number : listNumber) {
                     sum += Integer.parseInt(number);
                 }
-                return sum;
             } else {
                 return Integer.parseInt(text);
             }
         }
+        return sum;
     }
 }

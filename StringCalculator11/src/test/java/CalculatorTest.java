@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.fail;
 
 /**
  * User: quangvh
@@ -8,20 +9,28 @@ import static junit.framework.Assert.assertEquals;
  */
 public class CalculatorTest {
     @Test
-    public void testStringEmpty() {
+    public void testStringEmpty() throws Exception {
         assertEquals(Calculator.add(""), 0);
     }
     @Test
-    public void testOneNumber() {
+    public void testOneNumber() throws Exception {
         assertEquals(Calculator.add("1"), 1);
     }
     @Test
-    public void testTwoNumber() {
+    public void testTwoNumber() throws Exception {
         assertEquals(Calculator.add("1,2"), 3);
     }
     @Test
-    public void testUnknownNumber() {
+    public void testUnknownNumber() throws Exception {
         assertEquals(Calculator.add("1,2,3,4,5"), 15);
+    }
+    @Test
+    public void testHaveNewLine() throws Exception {
+        assertEquals(Calculator.add("1\n2,3"), 6);
+    }
+    @Test
+    public void testDifferentDelimiter() throws Exception {
+        assertEquals(Calculator.add("//;\n1;2"), 3);
     }
 
 }
